@@ -29,7 +29,7 @@ console.log(fatorial(100));*/
 
 */
 
-function fatorial(n) {
+/*function fatorial(n) {
     if (n === 0 || n === 1) {
         return 1;
     } else {
@@ -39,5 +39,14 @@ function fatorial(n) {
 }
 
 // Exemplo de uso da função recursiva
-console.log(fatorial(4)); // Saída: 120 (5! = 5 * 4 * 3 * 2 * 1 = 120)
+console.log(fatorial(4)); */ // Saída: 120 (5! = 5 * 4 * 3 * 2 * 1 = 120)
 
+function contarAteDez(numero) {
+    if (numero <= 10) {
+        console.log(numero);
+        contarAteDez(numero + 1); // Chama a si mesma com um número incrementado
+    }
+}
+
+// Chamando a função pela primeira vez
+contarAteDez(1);
