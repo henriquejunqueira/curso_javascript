@@ -39,6 +39,22 @@ await: Essa palavra-chave só pode ser usada dentro de funções marcadas como a
 execução da função async e espera que a promessa seja resolvida. Isso torna o código assíncrono 
 mais parecido com código síncrono.
 
+- async e await são recursos que tornam o código assíncrono mais fácil de ler e escrever.
+- async declara que uma função retornará uma promessa.
+- await pausa a execução de uma função async até que uma promessa seja resolvida.
+- Torna o código assíncrono mais parecido com código síncrono, facilitando sua compreensão.
+
+RESUMINDO MAIS AINDA:
+
+    Função Async/Await: Quase lá! Vamos esclarecer:
+
+    - async: Declara que uma função retornará uma promessa. Permite usar await dentro dela.
+    - await: Pausa a execução de uma função async até que a promessa seja resolvida. Ele não retorna 
+    a promessa em si, mas espera que ela seja resolvida para continuar a execução da função async.
+    - Resumindo:
+        - async declara que uma função retornará uma promessa.
+        - await pausa a execução de uma função async até que a promessa seja resolvida.
+
 */
 
 // Função assíncrona que retorna uma promessa

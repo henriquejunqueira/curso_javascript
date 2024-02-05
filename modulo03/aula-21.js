@@ -45,6 +45,14 @@ Uma função de callback é uma função que é passada como argumento para outr
 após a conclusão de uma operação assíncrona ou em resposta a algum evento. Ela permite que você 
 controle o fluxo de execução do seu código de forma assíncrona.
 
+- Uma função de callback é uma função que é passada como argumento para outra função.
+- Ela é executada quando uma operação assíncrona é concluída ou quando ocorre um evento.
+- É comumente usada para controlar o fluxo de execução em operações assíncronas.
+
+RESUMINDO MAIS AINDA:
+- Função de Callback: É passada como argumento para outra função e é executada quando uma operação 
+assíncrona é concluída ou quando um evento ocorre.
+
 */
 
 function fazerAlgo(callback) {
