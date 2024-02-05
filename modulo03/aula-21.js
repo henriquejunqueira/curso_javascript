@@ -1,5 +1,5 @@
 
-const teste1 = (callback) => {
+/*const teste1 = (callback) => {
     // executa após um determinado tempo de 600 mili segundos (menos de 1 segundo)
     setTimeout(() =>{
         console.log('teste 1');
@@ -37,4 +37,29 @@ console.log('1 + 1 = ', 1+1);
 teste2(funcaoCallBack);
 teste3();
 console.log('2 + 2 = ', 2+2);
-teste4();
+teste4();*/
+
+/* RESUMO:
+
+Uma função de callback é uma função que é passada como argumento para outra função e executada 
+após a conclusão de uma operação assíncrona ou em resposta a algum evento. Ela permite que você 
+controle o fluxo de execução do seu código de forma assíncrona.
+
+*/
+
+function fazerAlgo(callback) {
+    console.log("Fazendo algo...");
+    // Simulando uma operação assíncrona (por exemplo, uma requisição AJAX)
+    setTimeout(function() {
+        console.log("Operação assíncrona concluída.");
+        callback(); // Chama a função de callback após a operação assíncrona
+    }, 2000);
+}
+
+// Função de callback passada como argumento
+function callback() {
+    console.log("Callback executada!");
+}
+
+// Chamando a função e passando a função de callback como argumento
+fazerAlgo(callback);
